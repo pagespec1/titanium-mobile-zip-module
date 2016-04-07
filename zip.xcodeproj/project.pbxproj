@@ -33,13 +33,15 @@
 		1EF50E0814B5D591000B79F0 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF50DFD14B5D591000B79F0 /* zip.h */; };
 		1EF50E0914B5D591000B79F0 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF50DFE14B5D591000B79F0 /* ZipArchive.h */; };
 		1EF50E0A14B5D591000B79F0 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EF50DFF14B5D591000B79F0 /* ZipArchive.mm */; };
-		1EF50E0D14B5D6A4000B79F0 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF50E0C14B5D6A4000B79F0 /* libz.1.2.5.dylib */; };
 		24DD6CF91134B3F500162E58 /* DeMarcelpociotZipModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* DeMarcelpociotZipModule.h */; };
 		24DD6CFA1134B3F500162E58 /* DeMarcelpociotZipModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* DeMarcelpociotZipModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* DeMarcelpociotZipModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* DeMarcelpociotZipModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* DeMarcelpociotZipModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* DeMarcelpociotZipModuleAssets.m */; };
 		AA747D9F0F9514B9006C5449 /* DeMarcelpociotZip_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* DeMarcelpociotZip_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		FE238C8B1CB7177600BF0D5D /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = FE238C891CB7177600BF0D5D /* Zip.h */; };
+		FE238C8C1CB7177600BF0D5D /* Zip.m in Sources */ = {isa = PBXBuildFile; fileRef = FE238C8A1CB7177600BF0D5D /* Zip.m */; };
+		FE238C8E1CB7179400BF0D5D /* libz.1.2.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FE238C8D1CB7179400BF0D5D /* libz.1.2.8.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,18 +55,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1EF50DF514B5D591000B79F0 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		1EF50DF614B5D591000B79F0 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
-		1EF50DF714B5D591000B79F0 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
-		1EF50DF814B5D591000B79F0 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
-		1EF50DF914B5D591000B79F0 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
-		1EF50DFA14B5D591000B79F0 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
-		1EF50DFB14B5D591000B79F0 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		1EF50DFC14B5D591000B79F0 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
-		1EF50DFD14B5D591000B79F0 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		1EF50DF514B5D591000B79F0 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Classes/ZipArchive/minizip/crypt.h; sourceTree = SOURCE_ROOT; };
+		1EF50DF614B5D591000B79F0 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = Classes/ZipArchive/minizip/ioapi.c; sourceTree = SOURCE_ROOT; };
+		1EF50DF714B5D591000B79F0 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Classes/ZipArchive/minizip/ioapi.h; sourceTree = SOURCE_ROOT; };
+		1EF50DF814B5D591000B79F0 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = Classes/ZipArchive/minizip/mztools.c; sourceTree = SOURCE_ROOT; };
+		1EF50DF914B5D591000B79F0 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = Classes/ZipArchive/minizip/mztools.h; sourceTree = SOURCE_ROOT; };
+		1EF50DFA14B5D591000B79F0 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = Classes/ZipArchive/minizip/unzip.c; sourceTree = SOURCE_ROOT; };
+		1EF50DFB14B5D591000B79F0 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Classes/ZipArchive/minizip/unzip.h; sourceTree = SOURCE_ROOT; };
+		1EF50DFC14B5D591000B79F0 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zip.c; path = Classes/ZipArchive/minizip/zip.c; sourceTree = SOURCE_ROOT; };
+		1EF50DFD14B5D591000B79F0 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Classes/ZipArchive/minizip/zip.h; sourceTree = SOURCE_ROOT; };
 		1EF50DFE14B5D591000B79F0 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
 		1EF50DFF14B5D591000B79F0 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
-		1EF50E0C14B5D6A4000B79F0 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		24DD6CF71134B3F500162E58 /* DeMarcelpociotZipModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeMarcelpociotZipModule.h; path = Classes/DeMarcelpociotZipModule.h; sourceTree = "<group>"; };
 		24DD6CF81134B3F500162E58 /* DeMarcelpociotZipModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeMarcelpociotZipModule.m; path = Classes/DeMarcelpociotZipModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
@@ -73,6 +74,9 @@
 		AA747D9E0F9514B9006C5449 /* DeMarcelpociotZip_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeMarcelpociotZip_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libDeMarcelpociotZip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDeMarcelpociotZip.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE238C891CB7177600BF0D5D /* Zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Classes/ZipArchive/Zip.h; sourceTree = SOURCE_ROOT; };
+		FE238C8A1CB7177600BF0D5D /* Zip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Zip.m; path = Classes/ZipArchive/Zip.m; sourceTree = SOURCE_ROOT; };
+		FE238C8D1CB7179400BF0D5D /* libz.1.2.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.1.2.8.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EF50E0D14B5D6A4000B79F0 /* libz.1.2.5.dylib in Frameworks */,
+				FE238C8E1CB7179400BF0D5D /* libz.1.2.8.dylib in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,7 +114,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1EF50E0C14B5D6A4000B79F0 /* libz.1.2.5.dylib */,
+				FE238C8D1CB7179400BF0D5D /* libz.1.2.8.dylib */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -131,13 +135,15 @@
 		1EF50DF314B5D591000B79F0 /* ZipArchive */ = {
 			isa = PBXGroup;
 			children = (
+				FE238C891CB7177600BF0D5D /* Zip.h */,
+				FE238C8A1CB7177600BF0D5D /* Zip.m */,
 				1EF50DF414B5D591000B79F0 /* minizip */,
 				1EF50DFE14B5D591000B79F0 /* ZipArchive.h */,
 				1EF50DFF14B5D591000B79F0 /* ZipArchive.mm */,
 			);
 			name = ZipArchive;
-			path = ../../../Downloads/ZipArchive;
-			sourceTree = "<group>";
+			path = Classes/ZipArchive;
+			sourceTree = SOURCE_ROOT;
 		};
 		1EF50DF414B5D591000B79F0 /* minizip */ = {
 			isa = PBXGroup;
@@ -152,8 +158,9 @@
 				1EF50DFC14B5D591000B79F0 /* zip.c */,
 				1EF50DFD14B5D591000B79F0 /* zip.h */,
 			);
-			path = minizip;
-			sourceTree = "<group>";
+			name = minizip;
+			path = Classes/ZipArchive/minizip;
+			sourceTree = SOURCE_ROOT;
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
@@ -173,6 +180,7 @@
 			files = (
 				AA747D9F0F9514B9006C5449 /* DeMarcelpociotZip_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* DeMarcelpociotZipModule.h in Headers */,
+				FE238C8B1CB7177600BF0D5D /* Zip.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* DeMarcelpociotZipModuleAssets.h in Headers */,
 				1EF50E0014B5D591000B79F0 /* crypt.h in Headers */,
 				1EF50E0214B5D591000B79F0 /* ioapi.h in Headers */,
@@ -256,6 +264,7 @@
 				24DD6CFA1134B3F500162E58 /* DeMarcelpociotZipModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* DeMarcelpociotZipModuleAssets.m in Sources */,
 				1EF50E0114B5D591000B79F0 /* ioapi.c in Sources */,
+				FE238C8C1CB7177600BF0D5D /* Zip.m in Sources */,
 				1EF50E0314B5D591000B79F0 /* mztools.c in Sources */,
 				1EF50E0514B5D591000B79F0 /* unzip.c in Sources */,
 				1EF50E0714B5D591000B79F0 /* zip.c in Sources */,
@@ -301,6 +310,10 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -342,6 +355,10 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = DeMarcelpociotZip;
